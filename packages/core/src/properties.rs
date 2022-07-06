@@ -160,7 +160,9 @@ impl Properties for () {
 // that the macros use to anonymously complete prop construction.
 pub struct EmptyBuilder;
 impl EmptyBuilder {
-    pub fn build(self) {}
+    pub fn build<'a>(self) -> Element<'a> {
+        todo!()
+    }
 }
 
 /// This utility function launches the builder method so rsx! and html! macros can use the typed-builder pattern
