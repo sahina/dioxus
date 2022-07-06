@@ -37,7 +37,7 @@ use wry::webview::WebViewBuilder;
 /// use dioxus::prelude::*;
 ///
 /// fn main() {
-///     dioxus::desktop::launch(app);
+///     dioxus_desktop::launch(app);
 /// }
 ///
 /// fn app(cx: Scope) -> Element {
@@ -60,7 +60,7 @@ pub fn launch(root: Component) {
 /// use dioxus::prelude::*;
 ///
 /// fn main() {
-///     dioxus::desktop::launch_cfg(app, |c| c.with_window(|w| w.with_title("My App")));
+///     dioxus_desktop::launch_cfg(app, |c| c.with_window(|w| w.with_title("My App")));
 /// }
 ///
 /// fn app(cx: Scope) -> Element {
@@ -86,7 +86,7 @@ pub fn launch_cfg(
 /// use dioxus::prelude::*;
 ///
 /// fn main() {
-///     dioxus::desktop::launch_cfg(app, AppProps { name: "asd" }, |c| c);
+///     dioxus_desktop::launch_cfg(app, AppProps { name: "asd" }, |c| c);
 /// }
 ///
 /// struct AppProps {

@@ -13,16 +13,16 @@ fn generates_without_error() {
     assert_eq!(out, "<nav>navbar</nav>default<!--placeholder-->");
 }
 
-fn app(cx: Scope) -> Element {
-    cx.render(rsx! {
-        Router {
-            nav { "navbar" }
-            Route { to: "/", "default" }
-            Route { to: "/home", Home {} }
-        }
-    })
-}
+// fn app(cx: Scope) -> Element {
+//     cx.render(rsx! {
+//         Router {
+//             nav { "navbar" }
+//             Route { to: "/", "default" }
+//             Route { to: "/home", Home {} }
+//         }
+//     })
+// }
 
-fn Home(cx: Scope) -> Element {
-    cx.render(rsx! { h1 { "Home" } })
-}
+// fn Home(cx: Scope) -> Element {
+//     cx.render(rsx! { h1 { "Home" } " } })
+// }
