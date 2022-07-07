@@ -4,8 +4,8 @@ This calculator version uses React-style state management. All state is held as 
 */
 
 use dioxus::events::*;
+use dioxus::html::input_data::keyboard_types::Key;
 use dioxus::prelude::*;
-use dioxus_html::input_data::keyboard_types::Key;
 
 fn main() {
     use dioxus_desktop::tao::dpi::LogicalSize;

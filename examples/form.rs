@@ -4,6 +4,7 @@
 //! in the "values" field
 
 use dioxus::prelude::*;
+use dioxus_router::{Link, Route, Router};
 
 fn main() {
     dioxus_desktop::launch(app);

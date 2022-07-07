@@ -1,5 +1,6 @@
 use dioxus::prelude::*;
 use dioxus_desktop::tao::dpi::LogicalSize;
+use dioxus_router::{Link, Route, Router};
 
 fn main() {
     env_logger::init();
