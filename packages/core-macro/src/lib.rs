@@ -30,7 +30,7 @@ pub fn derive_typed_builder(input: proc_macro::TokenStream) -> proc_macro::Token
 ///
 /// ## Complete Reference Guide:
 /// ```
-#[doc = include_str!("../../dioxus/examples/rsx_usage.rs")]
+#[doc = include_str!("../../../examples/rsx_usage.rs")]
 /// ```
 #[proc_macro]
 pub fn rsx(s: TokenStream) -> TokenStream {

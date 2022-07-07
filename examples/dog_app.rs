@@ -2,8 +2,8 @@
 
 //! Render a bunch of doggos!
 
-use std::collections::HashMap;
 use dioxus::prelude::*;
+use std::collections::HashMap;
 
 fn main() {
     dioxus_desktop::launch(app);

@@ -17,7 +17,6 @@ fn app(cx: Scope) -> Element {
             }
             button {
                 onclick: move |_| eval(script),
-
                 "Execute"
             }
         }
