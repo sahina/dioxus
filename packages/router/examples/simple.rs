@@ -4,7 +4,7 @@ use dioxus::prelude::*;
 use dioxus_router::*;
 
 fn main() {
-    dioxus_desktop::launch(app);
+    dioxus_web::launch(app);
 }
 
 fn app(cx: Scope) -> Element {
