@@ -3,7 +3,7 @@ use dioxus_html::on::{FocusData, KeyboardData, MouseData, WheelData};
 use std::sync::Arc;
 
 fn main() {
-    dioxus::tui::launch(app);
+    dioxus_tui::launch(app);
 }
 
 #[derive(Debug)]

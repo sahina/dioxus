@@ -17,14 +17,14 @@ fn tui_update(c: &mut Criterion) {
             &size,
             |b, size| {
                 b.iter(|| match size {
-                    1 => dioxus::tui::launch_cfg(app3, Config::default().with_headless()),
-                    2 => dioxus::tui::launch_cfg(app6, Config::default().with_headless()),
-                    3 => dioxus::tui::launch_cfg(app9, Config::default().with_headless()),
-                    4 => dioxus::tui::launch_cfg(app12, Config::default().with_headless()),
-                    5 => dioxus::tui::launch_cfg(app15, Config::default().with_headless()),
-                    6 => dioxus::tui::launch_cfg(app18, Config::default().with_headless()),
-                    7 => dioxus::tui::launch_cfg(app21, Config::default().with_headless()),
-                    8 => dioxus::tui::launch_cfg(app24, Config::default().with_headless()),
+                    1 => dioxus_tui::launch_cfg(app3, Config::default().with_headless()),
+                    2 => dioxus_tui::launch_cfg(app6, Config::default().with_headless()),
+                    3 => dioxus_tui::launch_cfg(app9, Config::default().with_headless()),
+                    4 => dioxus_tui::launch_cfg(app12, Config::default().with_headless()),
+                    5 => dioxus_tui::launch_cfg(app15, Config::default().with_headless()),
+                    6 => dioxus_tui::launch_cfg(app18, Config::default().with_headless()),
+                    7 => dioxus_tui::launch_cfg(app21, Config::default().with_headless()),
+                    8 => dioxus_tui::launch_cfg(app24, Config::default().with_headless()),
                     _ => (),
                 })
             },

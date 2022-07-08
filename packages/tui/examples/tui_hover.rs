@@ -4,7 +4,7 @@ use dioxus::{events::MouseData, prelude::*};
 use dioxus_core::UiEvent;
 
 fn main() {
-    dioxus::tui::launch(app);
+    dioxus_tui::launch(app);
 }
 
 fn app(cx: Scope) -> Element {

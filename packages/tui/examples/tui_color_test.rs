@@ -1,9 +1,9 @@
 use dioxus::prelude::*;
 
 fn main() {
-    dioxus::tui::launch_cfg(
+    dioxus_tui::launch_cfg(
         app,
-        dioxus::tui::Config::default().with_rendering_mode(dioxus::tui::RenderingMode::Ansi),
+        dioxus_tui::Config::default().with_rendering_mode(dioxus_tui::RenderingMode::Ansi),
     );
 }
 

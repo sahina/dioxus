@@ -3,7 +3,7 @@
 use dioxus::prelude::*;
 
 fn main() {
-    dioxus::tui::launch(app);
+    dioxus_tui::launch(app);
 }
 
 #[derive(Props, PartialEq)]

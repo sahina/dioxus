@@ -33,7 +33,7 @@ use wry::webview::WebViewBuilder;
 ///
 /// This function will start a multithreaded Tokio runtime as well the WebView event loop.
 ///
-/// ```rust
+/// ```rust, ignore
 /// use dioxus::prelude::*;
 ///
 /// fn main() {
@@ -56,7 +56,7 @@ pub fn launch(root: Component) {
 ///
 /// You can configure the WebView window with a configuration closure
 ///
-/// ```rust
+/// ```rust, ignore
 /// use dioxus::prelude::*;
 ///
 /// fn main() {
@@ -82,7 +82,7 @@ pub fn launch_cfg(
 ///
 /// You can configure the WebView window with a configuration closure
 ///
-/// ```rust
+/// ```rust, ignore
 /// use dioxus::prelude::*;
 ///
 /// fn main() {

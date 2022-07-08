@@ -2,7 +2,7 @@ use dioxus::prelude::*;
 use dioxus_html::input_data::keyboard_types::Code;
 
 fn main() {
-    dioxus::tui::launch(app);
+    dioxus_tui::launch(app);
 }
 
 #[derive(PartialEq, Props)]

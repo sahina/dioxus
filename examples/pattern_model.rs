@@ -18,9 +18,9 @@
 //! RefMuts at the same time.
 
 use dioxus::events::*;
+use dioxus::html::input_data::keyboard_types::Key;
 use dioxus::prelude::*;
 use dioxus_desktop::wry::application::dpi::LogicalSize;
-use dioxus_html::input_data::keyboard_types::Key;
 
 fn main() {
     dioxus_desktop::launch_cfg(app, |cfg| {

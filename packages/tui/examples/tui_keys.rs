@@ -6,7 +6,7 @@ use dioxus_html::input_data::MouseButtonSet;
 use dioxus_html::on::{KeyboardEvent, MouseEvent};
 
 fn main() {
-    dioxus::tui::launch(app);
+    dioxus_tui::launch(app);
 }
 
 fn app(cx: Scope) -> Element {
