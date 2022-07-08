@@ -20,7 +20,6 @@ members = [
     "packages/rsx_interpreter",
     "packages/native-core",
     "packages/native-core-macro",
-    "packages/rsx-prelude",
     "docs/guide",
 ]
 
