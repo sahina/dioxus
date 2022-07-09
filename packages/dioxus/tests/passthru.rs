@@ -9,11 +9,7 @@
 
 use dioxus::prelude::*;
 
-mod test_logging;
-
 fn new_dom() -> VirtualDom {
-    const IS_LOGGING_ENABLED: bool = false;
-    test_logging::set_up_logging(IS_LOGGING_ENABLED);
     VirtualDom::new(|cx| rsx!(cx, "hi"))
 }
 

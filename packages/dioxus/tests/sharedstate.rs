@@ -5,8 +5,6 @@ use dioxus_core::{DomEdit, Mutations, SchedulerMsg, ScopeId};
 use std::rc::Rc;
 use DomEdit::*;
 
-mod test_logging;
-
 #[test]
 fn shared_state_test() {
     struct MySharedState(&'static str);

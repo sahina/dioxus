@@ -7,13 +7,11 @@
 
 use dioxus::prelude::*;
 
-mod test_logging;
 use dioxus_core::{DomEdit::*, ScopeId};
 
 const IS_LOGGING_ENABLED: bool = false;
 
 fn new_dom<P: 'static + Send>(app: Component<P>, props: P) -> VirtualDom {
-    test_logging::set_up_logging(IS_LOGGING_ENABLED);
     VirtualDom::new_with_props(app, props)
 }
 

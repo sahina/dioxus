@@ -6,9 +6,6 @@ use dioxus::prelude::*;
 use dioxus_core::DomEdit::*;
 use std::sync::{Arc, Mutex};
 
-mod test_logging;
-
-const IS_LOGGING_ENABLED: bool = true;
 type Shared<T> = Arc<Mutex<T>>;
 
 #[test]
@@ -31,7 +28,7 @@ fn manual_diffing() {
 
     let edits = dom.rebuild();
 
-    log::trace!("edits: {:?}", edits);
+    println!("edits: {:?}", edits);
 }
 
 #[test]
@@ -97,7 +94,7 @@ fn components_generate() {
     };
 
     fn Child(cx: Scope) -> Element {
-        log::trace!("Running child");
+        println!("Running child");
         cx.render(rsx! {
             h1 {}
         })

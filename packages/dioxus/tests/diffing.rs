@@ -8,11 +8,8 @@
 
 use dioxus::prelude::*;
 
-mod test_logging;
 
 fn new_dom() -> VirtualDom {
-    const IS_LOGGING_ENABLED: bool = false;
-    test_logging::set_up_logging(IS_LOGGING_ENABLED);
     VirtualDom::new(|cx| rsx!(cx, "hi"))
 }
 
@@ -224,7 +221,7 @@ fn two_fragments_with_differrent_elements_are_differet() {
     );
 
     let (_create, changes) = dom.diff_lazynodes(left, right);
-    log::trace!("{:#?}", &changes);
+    println!("{:#?}", &changes);
     assert_eq!(
         changes.edits,
         [
@@ -360,7 +357,7 @@ fn keyed_diffing_out_of_order() {
     });
 
     let (_, changes) = dom.diff_lazynodes(left, right);
-    log::trace!("{:?}", &changes);
+    println!("{:?}", &changes);
     assert_eq!(
         changes.edits,
         [PushRoot { root: 7 }, InsertBefore { root: 5, n: 1 }]
@@ -546,7 +543,7 @@ fn keyed_diffing_additions_and_moves_on_ends() {
     });
 
     let (_, change) = dom.diff_lazynodes(left, right);
-    log::trace!("{:?}", change);
+    println!("{:?}", change);
     assert_eq!(
         change.edits,
         [
@@ -579,7 +576,7 @@ fn keyed_diffing_additions_and_moves_in_middle() {
 
     // LIS: 4, 5, 6
     let (_, change) = dom.diff_lazynodes(left, right);
-    log::trace!("{:#?}", change);
+    println!("{:#?}", change);
     assert_eq!(
         change.edits,
         [
@@ -616,7 +613,7 @@ fn controlled_keyed_diffing_out_of_order() {
 
     // LIS: 5, 6
     let (_, changes) = dom.diff_lazynodes(left, right);
-    log::trace!("{:#?}", &changes);
+    println!("{:#?}", &changes);
     assert_eq!(
         changes.edits,
         [
@@ -653,7 +650,7 @@ fn controlled_keyed_diffing_out_of_order_max_test() {
     });
 
     let (_, changes) = dom.diff_lazynodes(left, right);
-    log::trace!("{:#?}", &changes);
+    println!("{:#?}", &changes);
     assert_eq!(
         changes.edits,
         [
