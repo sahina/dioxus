@@ -8,7 +8,6 @@
 
 use dioxus::prelude::*;
 
-
 fn new_dom() -> VirtualDom {
     VirtualDom::new(|cx| rsx!(cx, "hi"))
 }
