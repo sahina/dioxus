@@ -21,4 +21,4 @@ dioxus-hooks = { path = "../hooks"}
 [dev-dependencies]
 dioxus-core-macro = { path = "../core-macro" }
 bumpalo = { version = "3.6", features = ["collections", "boxed"] }
-dioxus = { path = "../dioxus" }
+dioxus = { path = "../dioxus", features = ["hot-reload"]}
